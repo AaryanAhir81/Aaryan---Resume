@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    font-family:'Inter',sans-serif;
+    background:#ececec;
+    color:#222;
+    font-size:12px;
+    line-height:1.35;
+}
+
+.container{
+    width:210mm;
+    min-height:297mm;
+    margin:10px auto;
+    background:#fff;
+    padding:14mm;
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
+}
+
+/* ================= Header ================= */
+
+.header{
+    border-bottom:1px solid #222;
+    padding-bottom:12px;
+    margin-bottom:12px;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.header-left{
+    flex:1;
+}
+
+.header h1{
+    font-size:30px;
+    font-weight:700;
+    color:#111;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+.contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    font-size:11px;
+    color:#555;
+    margin-top:4px;
+}
+
+.contact a{
+    color:#000;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+.header-right{
+    flex-shrink:0;
+}
+
+.header-right img{
+    width:110px;
+    height:130px;
+    object-fit:cover;
+    border:1px solid #555;
+    background:#fff;
+}
+
+/* ================= Sections ================= */
+
+section{
+    margin-top:10px;
+}
+
+section h2{
+    font-size:15px;
+    text-transform:uppercase;
+    border-bottom:1px solid #222;
+    padding-bottom:3px;
+    margin-bottom:6px;
+    letter-spacing:.5px;
+}
+
+/* ================= Paragraph ================= */
+
+p{
+    font-size:12px;
+    line-height:1.45;
+    margin-bottom:5px;
+    text-align:justify;
+}
+
+/* ================= Skills ================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table td{
+    padding:3px 2px;
+    font-size:12px;
+    vertical-align:top;
+}
+
+table td:first-child{
+    width:120px;
+    font-weight:600;
+}
+
+/* ================= Projects ================= */
+
+.project{
+    margin-bottom:8px;
+}
+
+.project-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:8px;
+    margin-bottom:3px;
+}
+
+.project-header h3{
+    font-size:13px;
+    font-weight:600;
+}
+
+.project-header span{
+    font-size:10px;
+    color:#666;
+    white-space:nowrap;
+}
+
+.project ul{
+    margin-left:18px;
+}
+
+.project li{
+    font-size:11px;
+    line-height:1.35;
+    margin-bottom:2px;
+}
+
+/* ================= Education ================= */
+
+.education{
+    margin-bottom:8px;
+}
+
+.edu-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.edu-header h3{
+    font-size:13px;
+    font-weight:600;
+}
+
+.edu-header span{
+    font-size:11px;
+    color:#666;
+}
+
+/* ================= Lists ================= */
+
+ul{
+    margin-left:18px;
+}
+
+li{
+    font-size:11px;
+    line-height:1.35;
+    margin-bottom:2px;
+}
+
+/* ================= Links ================= */
+
+a{
+    color:#000;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ================= Print ================= */
+
+@page{
+    size:A4;
+    margin:10mm;
+}
+
+@media print{
+
+    html,
+    body{
+        width:210mm;
+        height:297mm;
+        margin:0;
+        padding:0;
+        background:#fff;
+        zoom:97%;
+    }
+
+    .container{
+        width:100%;
+        min-height:auto;
+        margin:0;
+        padding:10mm;
+        box-shadow:none;
+        overflow:hidden;
+    }
+
+    section,
+    .project,
+    .education{
+        page-break-inside:avoid;
+        break-inside:avoid;
+    }
+}
