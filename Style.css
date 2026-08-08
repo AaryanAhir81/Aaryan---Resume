@@ -11,32 +11,34 @@ body{
     font-family:'Inter',sans-serif;
     background:#ececec;
     color:#222;
-    font-size:12px;
-    line-height:1.35;
+    font-size:11px;
+    line-height:1.3;
 }
 
 .container{
     width:210mm;
-    min-height:297mm;
-    margin:10px auto;
+    height:297mm;
+    max-height:297mm;
+    margin:0 auto;
     background:#fff;
-    padding:14mm;
+    padding:10mm 12mm;
     box-shadow:0 3px 12px rgba(0,0,0,.12);
+    overflow:hidden;
 }
 
 /* ================= Header ================= */
 
 .header{
     border-bottom:1px solid #222;
-    padding-bottom:12px;
-    margin-bottom:12px;
+    padding-bottom:8px;
+    margin-bottom:8px;
 }
 
 .header-content{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:20px;
+    gap:15px;
 }
 
 .header-left{
@@ -44,20 +46,20 @@ body{
 }
 
 .header h1{
-    font-size:30px;
+    font-size:24px;
     font-weight:700;
     color:#111;
-    letter-spacing:1px;
-    margin-bottom:8px;
+    letter-spacing:0.5px;
+    margin-bottom:4px;
 }
 
 .contact{
     display:flex;
     flex-wrap:wrap;
     gap:6px;
-    font-size:11px;
+    font-size:10.5px;
     color:#555;
-    margin-top:4px;
+    margin-top:2px;
 }
 
 .contact a{
@@ -74,8 +76,8 @@ body{
 }
 
 .header-right img{
-    width:110px;
-    height:130px;
+    width:85px;
+    height:100px;
     object-fit:cover;
     border:1px solid #555;
     background:#fff;
@@ -84,24 +86,24 @@ body{
 /* ================= Sections ================= */
 
 section{
-    margin-top:10px;
+    margin-top:8px;
 }
 
 section h2{
-    font-size:15px;
+    font-size:13px;
     text-transform:uppercase;
     border-bottom:1px solid #222;
-    padding-bottom:3px;
-    margin-bottom:6px;
+    padding-bottom:2px;
+    margin-bottom:4px;
     letter-spacing:.5px;
 }
 
 /* ================= Paragraph ================= */
 
 p{
-    font-size:12px;
-    line-height:1.45;
-    margin-bottom:5px;
+    font-size:11px;
+    line-height:1.35;
+    margin-bottom:4px;
     text-align:justify;
 }
 
@@ -113,20 +115,20 @@ table{
 }
 
 table td{
-    padding:3px 2px;
-    font-size:12px;
+    padding:2px 2px;
+    font-size:11px;
     vertical-align:top;
 }
 
 table td:first-child{
-    width:120px;
+    width:110px;
     font-weight:600;
 }
 
 /* ================= Projects ================= */
 
 .project{
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 .project-header{
@@ -134,11 +136,11 @@ table td:first-child{
     justify-content:space-between;
     align-items:flex-start;
     gap:8px;
-    margin-bottom:3px;
+    margin-bottom:2px;
 }
 
 .project-header h3{
-    font-size:13px;
+    font-size:12px;
     font-weight:600;
 }
 
@@ -148,20 +150,10 @@ table td:first-child{
     white-space:nowrap;
 }
 
-.project ul{
-    margin-left:18px;
-}
-
-.project li{
-    font-size:11px;
-    line-height:1.35;
-    margin-bottom:2px;
-}
-
 /* ================= Education ================= */
 
 .education{
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 .edu-header{
@@ -171,25 +163,25 @@ table td:first-child{
 }
 
 .edu-header h3{
-    font-size:13px;
+    font-size:12px;
     font-weight:600;
 }
 
 .edu-header span{
-    font-size:11px;
+    font-size:10.5px;
     color:#666;
 }
 
 /* ================= Lists ================= */
 
 ul{
-    margin-left:18px;
+    margin-left:16px;
 }
 
 li{
-    font-size:11px;
-    line-height:1.35;
-    margin-bottom:2px;
+    font-size:10.5px;
+    line-height:1.3;
+    margin-bottom:1px;
 }
 
 /* ================= Links ================= */
@@ -201,6 +193,41 @@ a{
 
 a:hover{
     text-decoration:underline;
+}
+
+/* ================= REFERENCES ================= */
+
+.references {
+    margin-top: 8px;
+}
+
+.reference-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 6px;
+}
+
+.reference-item {
+    flex: 1;
+    padding-left: 10px;
+    border-left: 2.5px solid #1f4e79;
+}
+
+.reference-item h3 {
+    margin: 0 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f4e79;
+}
+
+.reference-item p {
+    margin: 2px 0;
+    font-size: 10.5px;
+    color: #444;
+    line-height: 1.3;
+    text-align: left;
+    white-space: nowrap;
 }
 
 /* ================= Print ================= */
@@ -219,14 +246,14 @@ a:hover{
         margin:0;
         padding:0;
         background:#fff;
-        zoom:97%;
     }
 
     .container{
-        width:100%;
-        min-height:auto;
+        width:210mm;
+        height:297mm;
+        max-height:297mm;
         margin:0;
-        padding:10mm;
+        padding:10mm 12mm;
         box-shadow:none;
         overflow:hidden;
     }
